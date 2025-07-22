@@ -1,0 +1,44 @@
+# Android Studio project files
+*.iml
+.gradle/
+.idea/
+local.properties
+.DS_Store
+captures/
+build/
+.cxx/
+.externalNativeBuild/
+
+# IntelliJ
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/.name
+*.iws
+
+# Build outputs
+*/build/
+
+# Signing files
+*.jks
+*.keystore
+
+# Log files
+*.log
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Crashlytics and Fabric
+com_crashlytics_export_strings.xml
+crashlytics-build.properties
+fabric.properties
+
+# Misc
+*.orig
+

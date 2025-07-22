@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/closeArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/closeArticleIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_arrow_back"/>
+
+            <TextView
+                android:id="@+id/closeArticleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/closeArticleIcon"
+                android:layout_alignTop="@id/closeArticleIcon"
+                android:layout_alignBottom="@id/closeArticleIcon"
+                android:gravity="center_vertical"
+                android:text="@string/back_to_user_list_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/articleUpdateIconId"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_customize_white"
+            android:background="@color/transparent_dark"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/detailedArticleImageID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closeArticle"
+            android:src="@drawable/default_background"
+            android:maxHeight="300dp"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/detailedArticlePublishDateID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_article_publish_date_text"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_below="@id/detailedArticleImageID"/>
+
+        <TextView
+            android:id="@+id/detailedArticleDateID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="une date"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_below="@id/detailedArticleImageID"
+            android:layout_toEndOf="@+id/detailedArticlePublishDateID"
+            android:layout_marginStart="4dp"/>
+
+        <TextView
+            android:id="@+id/detailedArticleByAuthorID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_article_author_name_text"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_below="@id/detailedArticlePublishDateID"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/detailedArticleAuthorID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="un auteur"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_below="@id/detailedArticleDateID"
+            android:layout_toEndOf="@+id/detailedArticleByAuthorID"
+            android:layout_marginStart="4dp"/>
+
+        <ImageView
+            android:id="@+id/iconViewID"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_view"
+            android:layout_alignTop="@id/detailedArticlePublishDateID"
+            android:layout_alignBottom="@id/detailedArticlePublishDateID"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/detailedArticleViewNumberId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1234"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_toStartOf="@id/iconViewID"
+            android:layout_alignTop="@id/detailedArticlePublishDateID"
+            android:layout_alignBottom="@id/detailedArticlePublishDateID"/>
+
+        <ImageView
+            android:id="@+id/articleDeleteIconId"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_trash"
+            android:layout_alignEnd="@id/iconViewID"
+            android:layout_alignStart="@id/iconViewID"
+            android:layout_below="@id/iconViewID"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/detailedArticleTitleID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/article_title_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/red_brown"
+            android:layout_below="@id/detailedArticleByAuthorID"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/detailedArticleBodyID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/article_preview_lorem_text"
+            android:layout_below="@id/detailedArticleTitleID"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/commentTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailedArticleBodyID"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/full_article_comment_text"
+            android:textStyle="italic"/>
+
+        <FrameLayout
+            android:id="@+id/commentFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/commentTextId"
+            android:layout_marginBottom="16dp"/>
+    </RelativeLayout>
+
+</ScrollView>

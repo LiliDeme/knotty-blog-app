@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageArticleFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/selectArticleBtn"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+            <ImageView
+                android:id="@+id/selectArticleImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_img"/>
+
+            <Button
+                android:id="@+id/selectArticleImageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="@string/add_article_image_btn_text"
+
+                android:layout_gravity="end"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/article_title_text"
+                android:layout_marginBottom="4dp"/>
+            <EditText
+                android:id="@+id/selectArticleTitleID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:background="@drawable/edit_text_article_shape"
+                android:hint="@string/add_article_title_text"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp"
+                android:textSize="14sp"
+                android:maxLength="70"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/article_preview_text"
+                android:layout_marginBottom="4dp"/>
+            <EditText
+                android:id="@+id/selectArticlePreviewID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="60dp"
+                android:background="@drawable/edit_text_article_shape"
+                android:hint="@string/add_article_preview_text"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp"
+                android:textSize="14sp"
+                android:maxLength="200"
+                android:gravity="start"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/article_body_text"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/selectArticleBodyID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_article_shape"
+                android:gravity="start"
+                android:hint="@string/add_article_body_text"
+                android:inputType="textMultiLine"
+                android:minHeight="60dp"
+                android:minLines="15"
+                android:padding="4dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/selectArticleBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red_brown"
+        android:text="@string/add_article_btn_text"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

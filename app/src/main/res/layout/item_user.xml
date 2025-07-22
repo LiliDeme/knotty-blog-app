@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="16dp">
+
+    <RelativeLayout
+        android:id="@+id/itemUserLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/transparent_dark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/userItemIconUsername"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_person"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginHorizontal="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <ImageView
+                android:id="@+id/userItemIconMail"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_email"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/userItemIconUsername"
+                android:layout_marginHorizontal="4dp"/>
+
+
+            <TextView
+                android:id="@+id/userItemUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/userItemIconUsername"
+                android:layout_alignTop="@id/userItemIconUsername"
+                android:layout_alignBottom="@id/userItemIconUsername"
+                android:gravity="center_vertical"
+                android:text="Un nom"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/userItemEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/userItemIconMail"
+                android:layout_alignTop="@id/userItemIconMail"
+                android:layout_alignBottom="@id/userItemIconMail"
+                android:gravity="center_vertical"
+                android:text="Un mail"
+                android:textColor="@color/white"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iconUpdateUserAdminID"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_update"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="4dp"/>
+
+        <ImageView
+            android:id="@+id/iconDeleteUserAdminId"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_trash"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

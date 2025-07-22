@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Laboratoire3</string>
+    <string name="app_name_text">Knotty Blog</string>
+    <string name="conceptor_text">Par Liliane Demers</string>
+    <string name="username_text">Nom utilisateur</string>
+    <string name="account_username_text">Nom utilisateur :\ </string>
+    <string name="password_text">Mot de passe</string>
+    <string name="password_confirm_text">Confirmer mot de passe</string>
+    <string name="email_text">Email</string>
+    <string name="account_email_text">Email :\ </string>
+    <string name="connect_btn_text">Connexion</string>
+    <string name="no_account_text">Pas de compte? S\'inscrire</string>
+    <string name="pass_forgot_text">Mot de passe oublié?</string>
+    <string name="create_user_text">Créer Compte</string>
+    <string name="allready_member_text">Deja membre? Se connecter</string>
+    <string name="article_preview_lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <string name="account_update_btn_text">Moddifier compte utilisateur</string>
+    <string name="account_delete_btn_text">SUPPRIMMER UTILISATEUR</string>
+
+    <string name="save_account_change_text">Sauvegarder changement</string>
+
+    <string name="back_to_user_list_text">Retour</string>
+    <string name="back_to_user_account_text">Annuler</string>
+
+    <string name="full_article_publish_date_text">Date de parution :  </string>
+    <string name="full_article_comment_text">Commentaires :</string>
+    <string name="full_article_author_name_text">Par :</string>
+    <string name="full_article_author_text">Commentaires :</string>
+
+    <string name="menu_ajouter_text">Ajouter</string>
+    <string name="menu_home_text">Acceuil</string>
+    <string name="menu_hamburger_text">Menu</string>
+    <string name="menu_profil_text">Profil</string>
+    <string name="menu_manage_profil_text">Modifier Profil</string>
+    <string name="menu_logout_text">Se Déconecter</string>
+
+    <string name="menu_admin_manage_users_text">Gestion des utilisateurs</string>
+
+    <string name="menu_update_article">Modifier</string>
+    <string name="menu_delete_article">Supprimer</string>
+
+    <string name="article_title_text">Titre</string>
+    <string name="article_preview_text">Apperçu</string>
+    <string name="article_body_text">Corps</string>
+
+    <string name="tab_library_text">Mes articles</string>
+
+    <string name="add_article_image_btn_text">Choisir image (optionnel)</string>
+    <string name="add_article_btn_text">Ajouter</string>
+    <string name="modify_article_btn_text">Sauvegarder changements</string>
+    <string name="add_article_preview_text">De quoi parle votre article? Entrez un apperçu de l\'article (optionel)</string>
+    <string name="add_article_title_text">Entrez un titre</string>
+    <string name="add_article_body_text">Écrivez votre article</string>
+
+    <string name="alert_dialog_logout_message_text">Voulez-vous vraiment vous déconnecter?</string>
+    <string name="alert_dialog_logout_title_text">Déconnexion</string>
+    <string name="alert_dialog_logout_positive_button_text">Se Déconnecter</string>
+    <string name="alert_dialog_logout_negative_button_text">Annuler</string>
+
+    <string name="alert_dialog_delete_article_message_text">Voulez-vous vraiment supprimer définitivement cet article?</string>
+    <string name="alert_dialog_delete_article_title_text">Suppression d\'article</string>
+
+    <string name="alert_dialog_option_delete_user_text">Supprimer le compte</string>
+    <string name="alert_dialog_option_delete_ban_user_text">Supprimer et banir le compte</string>
+    <string name="alert_dialog_delete_user_title_text">Suppression d\'utilisateur. Attention, action définitive!</string>
+
+    <string name="alert_dialog_negative_button_text">Annuler</string>
+    <string name="alert_dialog_positive_button_text">Confirmer</string>
+
+    <string name="toast_admin_creation_success_text">Premier lancement! Création du user Admin</string>
+    <string name="toast_admin_creation_data_text">|username: admin | password: admin|</string>
+    <string name="toast_admin_creation_failed_text">Erreur lors de la création de l\'Admin</string>
+
+    <string name="toast_users_not_found_text">Aucun utilisateurs trouvés..</string>
+    <string name="toast_user_not_found_text">Utilisateur non trouvé</string>
+
+    <string name="toast_articles_not_found_text">Aucun articles trouvés..</string>
+
+    <string name="toast_add_article_missing_field_text">Vous devez choisir un titre et entrer du texte dans le corps</string>
+    <string name="toast_add_article_success_text">Article sauvegardé</string>
+    <string name="toast_add_article_failed_text">Erreur lors de la sauvegarde de l\'article</string>
+    <string name="toast_load_article_failed_text">Erreur lors du chargement de l\'article</string>
+
+    <string name="toast_update_article_success_text">Article modifié</string>
+    <string name="toast_update_article_failed_text">Erreur lors de la modification de l\'article</string>
+
+    <string name="toast_delete_user_success_text">Utilisateur supprimé</string>
+    <string name="toast_delete_user_failed_text">Erreur lors de la suppression</string>
+    <string name="toast_ban_user_success_text">Utilisateur supprimé et banni</string>
+
+    <string name="toast_delete_article_success_text">Article supprimé</string>
+    <string name="toast_delete_article_failed_text">Erreur lors de la suppression</string>
+
+    <string name="toast_increment_article_view_failed_text">Erreur lors de l\'incrementation</string>
+
+    <string name="toast_register_empty_field_text">Veuillez remplir tous les champs</string>
+    <string name="toast_register_banned_mail_text">Utilisateur banni</string>
+    <string name="toast_register_username_exist_field_text">Nom d\'utilisateur déjà pris</string>
+    <string name="toast_register_email_exist_text">Un utilisateur détient déjà cet email</string>
+    <string name="toast_register_different_password_text">Les mots de passes ne sont pas identiques</string>
+    <string name="toast_register_success_text">Utilisateur cree avec sucess</string>
+    <string name="toast_register_failed_text">Impossible d\'enregister le compte</string>
+    <string name="toast_update_success_text">Utilisateur modifié avec sucess</string>
+
+    <string name="toast_login_success_text">Connexion Réussie!</string>
+
+    <string name="toast_get_user_id_failed_text">L\'id de l\'utilisateur n\'a pas été récupéré</string>
+
+    <string name="image_chooser_no_selection_text">Aucune image sélectionnée</string>
+    <string name="exception_image_not_found_text">Image non trouvée</string>
+    <string name="exception_image_error_loading_text">Erreur lors du chargement de l\'imgage</string>
+
+</resources>

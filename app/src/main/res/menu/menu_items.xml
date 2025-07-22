@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="ifRoom"
+        android:title="@string/menu_ajouter_text"/>
+
+    <item
+        android:id="@+id/action_menu"
+        android:icon="@drawable/ic_vector_menu"
+        android:title="@string/menu_hamburger_text"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_home"
+                android:icon="@drawable/ic_vector_home"
+                android:title="@string/menu_home_text"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_profil"
+                android:icon="@drawable/baseline_account_box_24"
+                android:title="@string/menu_profil_text"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_manage_users"
+                android:icon="@drawable/baseline_manage_accounts_24"
+                android:title="@string/menu_admin_manage_users_text"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/action_logout"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="@string/menu_logout_text"
+                app:showAsAction="never"/>
+
+        </menu>
+    </item>
+</menu>

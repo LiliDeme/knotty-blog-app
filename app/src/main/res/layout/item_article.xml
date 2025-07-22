@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="20dp">
+
+    <ImageView
+        android:id="@+id/articleImageID"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/default_background"
+        android:scaleType="centerCrop"
+        android:background="@drawable/item_background_shape"
+        android:clipToOutline="true"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@id/articleImageID"
+        android:background="@drawable/item_background_bottom_shape">
+
+        <TextView
+            android:id="@+id/articleCardTitleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="TITLE"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/articleCardPreviewId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/articleCardTitleId"
+            app:layout_constraintBottom_toTopOf="@id/iconViewID"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:paddingHorizontal="5dp"/>
+
+        <ImageView
+            android:id="@+id/iconViewID"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/icon_view_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/articleViewNumberId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@id/iconViewID"
+            app:layout_constraintTop_toTopOf="@id/iconViewID"
+            app:layout_constraintBottom_toBottomOf="@id/iconViewID"
+            android:textColor="@color/white"
+            android:text="0"
+            android:textSize="15sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

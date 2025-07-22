@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingHorizontal="12dp">
+
+
+    <RelativeLayout
+        android:id="@+id/backToUserListId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        
+        <ImageView
+            android:id="@+id/backToUserListIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_arrow_back"/>   
+    
+        <TextView
+            android:id="@+id/backToUserListText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/backToUserListIcon"
+            android:layout_alignTop="@id/backToUserListIcon"
+            android:layout_alignBottom="@id/backToUserListIcon"
+            android:gravity="center_vertical"
+            android:text="@string/back_to_user_list_text"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/accountPicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_account_circle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"/>
+
+        <TextView
+            android:id="@+id/repereCentreHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/accountUserNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountPicture"
+            android:layout_toStartOf="@id/repereCentreHorizontal"
+            android:text="@string/account_username_text"
+            android:textSize="16sp"
+            android:layout_marginVertical="16dp"/>
+
+        <TextView
+            android:id="@+id/accountUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/repereCentreHorizontal"
+            android:layout_alignTop="@id/accountUserNameText"
+            android:layout_alignBottom="@id/accountUserNameText"
+            android:text="un nom"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/accountEmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountUserNameText"
+            android:layout_centerHorizontal="true"
+            android:layout_alignEnd="@id/repereCentreHorizontal"
+            android:text="@string/account_email_text"
+            android:textSize="16sp"
+            android:layout_marginVertical="16dp"/>
+
+        <TextView
+            android:id="@+id/accountEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/repereCentreHorizontal"
+            android:layout_alignTop="@id/accountEmailText"
+            android:layout_alignBottom="@id/accountEmailText"
+            android:textStyle="bold"
+            android:text="un mail"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/accountUpdateUserBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountEmailText"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/black"
+            android:text="@string/account_update_btn_text"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/accountDeleteUserBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountUpdateUserBtn"
+            android:layout_alignEnd="@id/accountUpdateUserBtn"
+            android:layout_alignStart="@id/accountUpdateUserBtn"
+            android:backgroundTint="@color/red"
+            android:text="@string/account_delete_btn_text"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

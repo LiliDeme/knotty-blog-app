@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/closeUserList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/closeUserListIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_arrow_back"/>
+
+            <TextView
+                android:id="@+id/closeUserListText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/closeUserListIcon"
+                android:layout_alignTop="@id/closeUserListIcon"
+                android:layout_alignBottom="@id/closeUserListIcon"
+                android:gravity="center_vertical"
+                android:text="@string/back_to_user_list_text"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/grey"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addUserButtonAdminID"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/closeUserList"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:text="@string/create_user_text"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleViewId"
+        android:layout_below="@+id/toolbar"/>
+
+</LinearLayout>
